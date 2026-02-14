@@ -27,7 +27,7 @@ jobs:
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
           SERVICE_ACCOUNT_JSON: ${{ secrets.SERVICE_ACCOUNT_JSON }}
-        run: python newsletter_automator.py
+        run: python autonews.py
 
       - name: Archive logs  # Saves logs for you to download if needed
         if: always()  # Runs even if there's an error
